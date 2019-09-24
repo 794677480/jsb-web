@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mydiv" class="box" data-ww="yes"></div>
+    <a href="https://www.baidu.com">百度</a>
+    <script>
+      var div = document.getElementById('mydiv');
+      var a = document.getElementsByTagName('a');
+      
+      console.log(div.getAttribute('class'))
+      console.log(a[0].getAttribute('href'))
+    </script>
+</body>
+</html>

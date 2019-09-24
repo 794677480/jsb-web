@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <input type='date' id='d'>
+    <script>
+       var nw = confirm('女士请点击');
+       
+
+       d.oninput=function(){
+        var nw = confirm('女士请点击');
+        var tim= (d.value=='2019-03-08');
+         if (tim && nw) {
+           alert("五折")
+         } else {
+           alert("无优惠")
+         }
+       }
+      
+    // //    nw == true?alert('请选择日期'):alert('无优惠')
+    //    d.oninput=function(){
+    //     //    d.value==2019-03-08?nw==true?alert('五折'):alert('无优惠');
+    //     // d.value == '2019-03-08'?alert('五折'):alert('无优惠')
+    //     d.value == '2019-03-08' && nw ? alert('五折'):alert('无优惠') 
+    //   }
+    </script>
+</body>
+</html>

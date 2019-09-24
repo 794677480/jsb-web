@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style>
+    .img{
+        width: 300px;
+        border: 1px solid black;
+    }
+    div{
+        width: 130px;
+        color: white;
+        text-align: center;
+        background-color: rgb(36,35,35);
+        display: none;
+    }
+</style>
+</head>
+<body>
+    
+    
+    <img src="timg.gif" alt="">
+    <div>动图</div>
+    <br>
+    <br>
+    <img src="timg.jpg" alt="">
+    <div>动图</div>
+    <script>
+        var mark=document.getElementsByTagName('div')
+        var imgs=document.getElementsByTagName('img');
+        // var img1s=imgs[0].getAttribute('src');
+        // var img1s=imgs[1].getAttribute('src');
+        // console.log(img1s.indexof('jpg'))
+        for(var i=0;i<imgs.length;i++){
+           var a = imgs[i].getAttribute('src');
+           if(a.indexOf('gif'!=-1)){
+
+           }
+        }
+    </script>
+</body>
+</html>

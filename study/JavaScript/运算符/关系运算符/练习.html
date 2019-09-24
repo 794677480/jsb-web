@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="请输入你的年龄" id="inp">
+    <button id="btn">折扣</button>
+    <script>
+       var inp=document.getElementById('inp');
+       var btn=document.getElementById('btn');
+       btn.onclick=function(){
+       if (inp.value<=8) {
+           alert('免费');
+       } else if(inp.value>=80){
+           alert('五折');
+       }else{
+           alert('正常');
+       }
+       }
+    </script>
+</body>
+</html>

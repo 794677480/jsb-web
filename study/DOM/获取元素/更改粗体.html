@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="c">加粗</h1>
+    <script>
+        var c = document.getElementById('c');
+        console.log(c.tagName);
+
+        //方法一:
+        //那些标签是加粗的h1~h6,b,strong
+        //H1||H2||H3||H4||H5||H6||B||STRONG
+         if (c.tagName=='H1'||c.tagName=='H2'||c.tagName=='H3'||c.tagName=='H4'||c.tagName=='H5'||c.tagName=='H6'||c.tagName=='B'||c.tagName=='STRONG') { 
+            c.style.fontWeight=200;
+        }
+
+
+        //方法二:
+        //不管是不是粗体,统一变为细体
+        c.style.fontWeight=200;
+
+        //方法三:  
+        var arr=['H1','H2','H3','H4','H5','H6','B','STRONG'];
+        // console.log(arr.indexof('H1'));
+        //检测数组里是否有粗体的标签名,返回-1以外的都是粗体
+        var istrue = arr.indexOf(c.tagName);
+        console.log(istrue);
+        //判断如果是粗体标签名,就改变样式
+        if(istrue != -1){
+            c.style.fontWeight=200;
+            c.style.color='red';
+        }
+    </script>
+</body>
+</html>

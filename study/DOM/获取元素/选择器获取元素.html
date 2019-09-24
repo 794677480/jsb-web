@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="ul">
+        <li class="a">1</li>
+        <li class="a">2</li>
+        <li class="b">3</li>
+        <li id="c">4</li>
+    </ul>
+    <div id="div">
+       <div>
+           <span>
+               <a href="">链接</a>
+           </span>        
+       </div>
+    </div>
+    <script>
+       var a=document.getElementsByClassName('a');
+       //querySelector只能获取一个  querySelectorALL获取全部
+       var b=document.querySelector('.a');
+       var c=document.querySelector('#c');
+       console.log(a);
+       console.log(b);
+       console.log(c);
+
+
+       var ul = document.getElementById('ul')
+        var x = document.querySelector('#div>div a');
+        var lis = ul.querySelectorAll('li');
+        console.log(lis);
+        console.log(x);
+       
+    </script>
+</body>
+</html>
