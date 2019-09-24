@@ -1,0 +1,292 @@
+body{
+    margin: 0;
+	font-size: 14px;
+}
+/* 头部 */
+.header{
+    width: 100%;
+   height: 200px;
+   background-color: #3F51B5;
+   text-align: center   
+}
+#logo{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    width: 120px;
+    height: 120px;     
+}
+#log{
+    font-size: 14px;
+    color: white;
+}
+/* 菜单 */
+.menu{
+     width: 100%;
+     height: 35px;
+     padding-top: 10px;
+     background-color: #3A4BA7;
+     text-align: center
+     
+}
+.menu>a{
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 82px;
+}
+/*身体*/
+.bod{
+	width: 900px;
+	margin: 30px auto;
+	
+}
+/* 第一个 */
+#bod1{
+	box-shadow:0px 0px 10px #888888;
+	
+}
+#bods{
+	position:absolute;left: 333px;top: 530px;
+	font-size: 24px;
+	color: white;
+}
+#boda{
+	
+	
+	padding: 16px;
+	font-size: 14px;
+	color: rgba(0,0,0,0.54);
+	height: 25px;
+}
+#bodb{
+	
+	height: 40px;
+	border-top: 1px solid beige;
+	color: rgb(255,64,129);
+	font-size: 13px;
+	padding: 8px;
+	
+}
+#bodb>div{
+	width: 108px;
+	height: 28px;
+	text-align:center;
+	padding-top: 9px;
+	cursor: pointer;
+	border-radius:2px ;
+}
+
+#bodb>div:hover{
+	background-color: #EEEEEE;
+}
+#bod1img{
+	
+	width: 100%;
+	height: 300px;
+	background: url(../img/cover.jpg) no-repeat center ;
+}
+/* 第二个 */
+#bod2{
+		margin-top: 50px;
+		
+}
+/* 左 */
+#bod2a{
+	width: 200px;
+	height: 200px;
+	margin-right: 10px;
+	float: left;
+	background-color: #b2dfdb;
+	box-shadow:0px 0px 10px #888888;
+}
+#bod2a>img{
+	position: relative;left: 80px;top: 80px;
+}
+/* 右 */
+#bod2b{
+	width: 650px;
+	height: 200px;
+	float: right;
+	border: 1px solid beige;
+	box-shadow:0px 0px 10px #888888;
+}
+#b2a{
+	height: 30px;
+	padding: 16px;
+	font-size: 24px;
+}
+#b2b{
+	height: 55px;
+	padding: 16px;
+	
+}
+#b2c{
+	height: 40px;
+	border-top: 1px solid beige;
+	color: rgb(255,64,129);
+	font-size: 13px;
+	padding: 8px;
+}
+#b2c>div{
+	border-radius:2px ;
+	width: 108px;
+	height:28px;
+	text-align:center;
+	padding-top:8px ;
+	cursor: pointer;
+	
+}
+#b2c>div:hover{
+	background-color: #EEEEEE;
+}
+/* 第三个 */
+#bod3{
+	margin-top: 300px;
+	
+}
+#bod3>div>img{
+	width: 100%;
+}
+#bod3>div{
+	border: 1px solid beige;
+	width: 280px;
+	height: 400px;
+	 display: inline-block;
+	 box-shadow:0px 0px 10px #888888;
+}
+#b3b{
+	margin:0 22px;	
+}
+.b31{
+	font-size: 24px;
+	padding: 16px 16px 0px;
+	font-weight:300 ;
+}
+.b32{
+	font-size: 14px;
+	padding: 16px;
+	color: rgba(0,0,0,0.54);
+}
+/* 第四个 */
+#bod4{
+	text-align: center;
+	margin-top: 50px;
+	width: 100%;
+	height: 50px;
+}
+#bod4>button{
+	color: white;
+	width: 150px;
+	height: 36px;
+	background-color: rgb(255,64,129);
+	border: 0;
+	border-radius:2px ;
+	cursor: pointer;
+	box-shadow:0px 0px 5px #888888;
+}
+/* 倒数第二个 */
+#foot{
+	background-color: #eee;
+	width: 100%;
+	height: 280px;
+	padding-top:30px ;
+}
+#foot>div{
+	margin: 0 auto;
+	width: 900px;
+	height: 244px;
+	font-weight: 300;
+}
+.left{
+	float: left;
+	width: 580px;
+	height: 100%;
+    background-color: white;	
+	box-shadow:0px 0px 5px #888888;
+}
+.right{
+	float: right;
+	width: 280px;
+	height: 100%;
+	background-color: royalblue;
+	box-shadow:0px 0px 5px #888888;
+}
+/* 左 */
+#l1{
+	font-size: 24px;
+	padding: 16px 16px 16px;
+	
+}
+#l2{
+	font-size: 16px;
+	padding: 16px ;
+}
+#l2>img{
+	float: left;
+	margin-right: 10px;
+}
+#l3{
+	font-size: 16px;
+	padding: 16px ;
+}
+#l3>img{
+	float: left;
+	margin-right: 10px;
+}
+/* 右 */
+#r1{
+	padding: 16px 16px 0;
+	height: 180px;
+}
+#r1>h4{
+	font-size: 24px;
+	color: white;
+	font-weight: 400;
+	margin: 0;
+}
+#r2{
+	padding: 8px;
+	font-size:16px ;
+	border-top: 1px solid lightgray;
+}
+#r2>button{
+	color: white;
+	width: 150px;
+	height: 30px;
+	border: 0;
+	background-color: royalblue;
+	border-radius:2px ;
+	cursor: pointer; 
+}
+#r2>button:hover{
+	background-color:rgba(0,0,0,0.1) ;
+}
+#r2>img{
+	float: right;
+	margin-right: 10px;
+}
+/* 底部 */
+#footer{
+	background-color: #424242;
+	height: 20px;
+	text-align: center;
+	padding: 30px;
+}
+.ft{
+	color: white;
+}
+.ft>a{
+	text-decoration: none;
+}
+#a1{
+	
+	color: #fff;
+}
+#a2{
+	color: #9E9E9E;
+}
+/* 邮箱图标 */
+#YX>a>img{
+	position: fixed ;right:50px; bottom:50px;
+	
+}
