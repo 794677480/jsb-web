@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        position: relative;
+    }
+   div{
+       width: 100px;
+       height: 100px;
+       background-color: red;
+       position: absolute;
+   }
+</style>
+</head>
+<body>
+    <div id="mydiv"></div>
+    <script>
+         var mydiv=document.getElementById('mydiv');
+
+         mydiv.onmousedown=function(e){
+            var ev = e || window.event
+            //获取div与鼠标的距离
+            var xcha=ev.clientX-mydiv.offsetLeft;
+            var ycha=ev.clientY-mydiv.offsetTop;
+
+            document.onmousemove=function(e){
+             var ev = e || window.event
+             //用鼠标与body间的距离减去div与鼠标的距离
+             mydiv.style.left= ev.clientX-xcha+'px';
+             mydiv.style.top= ev.clientY-ycha+'px';           
+         }   
+            document.onmouseup=function(){ 
+             //抬起时清除移动和抬起事件               
+             document.onmousemove = null;
+             document.onmouseup = null;          
+         } 
+         }
+
+    </script>
+</body>
+</html>
