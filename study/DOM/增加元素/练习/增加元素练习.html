@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style></style>
+</head>
+<body>
+    <h1 id="h"></h1>
+    <p id="p"></p>
+    <ul id="ul"></ul>
+    <script>
+        var a = document.createElement('a')
+        var h = document.getElementById('h')
+        h.appendChild(a);
+
+
+        var span = document.createElement('span')
+        var p = document.getElementById('p')
+        p.appendChild(span);
+
+
+        var ul = document.getElementById('ul');
+        for (let i = 0; i <10; i++) {
+             var li=document.createElement('li');     
+             ul.appendChild(li);     
+        }
+
+       
+    </script>
+</body>
+</html>

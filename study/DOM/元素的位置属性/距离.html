@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style>
+    *{
+       margin: 0;
+       padding: 0;
+    }
+    #baba{
+        width: 200px;
+        height: 300px;
+        background-color: blue;
+        padding: 10px;
+        margin: 100px auto;
+        position: relative;
+    }
+    #erzi{
+        width: 50px;
+        height: 50px;
+        background-color: gray;
+        position: absolute;
+    }
+</style>
+</head>
+<body>
+    <div id="baba">
+            <div id="erzi"></div>
+    </div>
+    
+    <script>
+       var baba=document.getElementById('baba');
+       var erzi=document.getElementById('erzi');
+       console.log(erzi.offsetLeft);
+       console.log(erzi.offsetTop);
+    </script>
+</body>
+</html>
