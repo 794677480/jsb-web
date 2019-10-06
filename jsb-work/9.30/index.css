@@ -1,0 +1,401 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type:none;
+    }
+/* 头 */
+.header{
+    width: 100%;
+   margin: 0 auto;
+}
+#header1{
+    margin-left:10%;
+	width: 80%;
+    padding-top: 30px;
+    height: 70px;
+    
+   
+}
+#header1>div{
+	
+	display: flex;
+}
+#header1>div>div{
+	display: flex;
+}
+#hl>div>a{
+    font-size: 12px;     
+    color: black;
+}
+#hl>div{
+	padding-top: 5px;
+}
+#hc{
+	margin: 0 auto;
+}
+#hr>div{
+	display: flex;
+}
+#hrr{
+	padding-top: 5px;
+}
+#hrf{
+	margin-left: 15px;
+	padding-left: 10px;
+	padding-top: 5px;
+	width: 25px;
+	height: 25px;
+	border: 1px solid #AAAAAA;
+}
+#hrl{
+	margin-left: 15px;
+	padding-left: 10px;
+	padding-top: 5px;
+	margin-right: 10px;
+	width: 25px;
+	height: 25px;
+	border: 1px solid #AAAAAA;
+}
+#hr3{
+	position: relative;
+}
+#hr3>span{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	padding-left: 5px;
+	width: 15px;
+	height: 20px;
+	background-color: #8FAC47;
+	color: white;
+}
+#hr>div>div{
+	padding-top: 5px;
+}
+#header2{
+	border-top: 1px solid gray;
+    text-align: center;
+    padding-top: 20px;
+    height: 50px;
+    border-bottom: 1px solid gray;
+}
+#header2>a{   
+    font-size: 14px;
+    margin-left: 10px; 
+    margin-right: 10px; 
+    color: #555555;
+}
+#header3{
+    font-size: 16px;
+    height: 100px;
+    margin-top: 30px;
+    padding-left: 10%;
+    border-bottom: 1px solid gray;
+    color: #555555;
+}
+#header3>h1{
+    font-size: 24px;
+    color: black;
+}
+#header3>a{
+    color: gray;
+}
+/* 身体 */
+.body{
+    width: 80%;
+    margin: 30px 10%;
+}
+#body1{
+    height: 380px;
+    display: flex;
+}
+
+#b1l{
+    
+    width: 800px;
+    height: 380px;   
+    position: relative;
+    
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image:url(images/about/about_1.jpg); 
+}
+#b1l>div{
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;	    
+	    background: rgba(0, 0, 0, 0.8);
+}
+#b1l>div>h3{
+    color: white;
+   font-size: 30px;
+   margin: 100px 0px;
+   padding-left: 80px;
+   padding-right: 200px;
+   font-weight: 300;
+   
+}
+#b1r{
+    
+    margin-left: 30px;
+    width: 360px;
+    height: 380px;
+    background-image:url(images/about/about_2.jpg);
+}
+#body2{
+    margin-top: 50px;
+    margin-right: 0;
+    height: 400px;
+    width:100%;
+    display: flex;
+}
+#b2l{
+	position:relative;
+    width: 700px;
+    height: 340px;
+    background-image:url(images/about/about_3.jpg) ;  
+    background-attachment: fixed;
+    text-align: center;
+    padding-top: 30px
+	
+}
+#b2l>div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+	background: rgba(0, 0, 0, 0.8);
+}
+#b2l>div>h4{
+    background-color: greenyellow;
+    color: white;
+    font-size: 14px;
+    width: 200px;
+    height: 30px;
+	margin-top: 50px;
+    margin-left: 90px;
+    padding-top: 10px;
+}
+#b2l>div>div{
+    width: 380px;
+    font-size: 200px;
+    color: white;
+}
+#b2r{
+    
+    margin-left: 10px;
+    
+    padding:30px 0 0 40px;
+}
+#b2r>h3{
+    margin: 11px 0;
+    
+    font-size: 30px;
+}
+#b2r>p{
+	color: #555555;
+    margin: 0  0 11px;
+    font-size: 16px;
+}
+#body3{
+    width: 100%;
+}
+#b3a{
+    text-align: center;
+    font-size: 16px;
+    color: #555555;
+    padding-bottom: 10px;
+}
+#b3b{
+    text-align: center;
+    font-size: 40px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+#b3c{
+    margin: 0 auto;
+    display: flex;
+}
+#b3c>div{
+    width: 360px;
+    height: 145px;
+    display: flex;
+	margin-left: 50px;
+    margin-right: 50px;
+}
+#body4{
+  
+    margin: 0 auto;
+    height: 220px;
+	background: url(images/about/about_bg_counter.jpg) ;
+	padding-left: 10%;
+}
+#body4>div{
+	display: flex;
+	width: 85%;
+}
+#body4>div>div{
+	margin-left:20px ;
+	margin-right:20px ;
+	text-align: center;
+    height: 220px;
+    width: 360px;
+}
+#body4>div>div>span{
+	    font-size: 100px;
+	    font-weight: 300;
+	    color: #8fac47;
+}
+#body4>div>div>h5{
+	    font-weight: bold;
+	    color: #000;
+	    line-height: 30px;
+}
+#body5{
+	margin-bottom: 50px;
+	margin-top: 50px;
+	height: 380px;
+	
+	padding-left: 10%;
+}
+#body5>div{
+	position: relative;
+	text-align: center;
+	width: 90%;
+	
+	background: url(images/about/about_4.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 350px;
+}
+#body5>div>div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;	
+	background: rgba(0, 0, 0, 0.8);
+}
+#body5>div>div>h3{
+	margin-top: 40px;
+	font-size: 40px;
+	line-height: 50px;
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+	color: white;
+}
+#body5>div>div>p{
+	color: #fff ;
+	margin: 0 0 11px;
+}
+#body5>div>div>a{
+	display: block;
+	color: #8fac47 ;
+}
+/* 尾部 */
+#footer{
+	width: 100%;
+}
+#footer a{
+	color: #555555;
+}
+#f1{
+	border-top: 1px solid darkgray;
+	padding-top: 60px;
+	height: 300px;
+	background: url(images/bg_footer.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding-left: 10%;
+}
+#f1>div{
+	width: 90%;
+	display: flex;
+}
+#f11{
+	margin-right: 100px;
+}
+#f11>p{
+	color: #555555;
+	padding: 30px 0 0;
+	margin: 0  0  11px;
+	font-size: 16px;
+}
+#f11>ul{
+	display: flex;
+}
+#f11>ul>li{
+	margin-right: 10px;
+	width: 20px;
+	height: 20px;
+	border: 1px solid darkgray;
+	padding: 10px;
+}
+#f12{
+	margin-right: 50px;
+}
+#f12>h3{
+	margin-bottom: 20px;
+	
+}
+#f12>ul{
+	line-height: 30px;
+}
+#f13{
+	margin-right: 50px;
+}
+#f13>h3{
+	margin-bottom: 20px;
+	
+}
+#f13>ul{
+	line-height: 30px;
+}
+#f14>h3{
+	padding-bottom: 12.5px;
+	font-size: 16px;
+}
+#f14>div{
+	display: flex;
+	margin-bottom: 30px;
+}
+#f14>div>div{
+	margin-right: 10px;
+}
+#f14>div>div>p{
+	color: #555555;
+}
+#f2{
+	border-top:1px solid #AAAAAA;
+	height: 60px;
+	padding-left: 10%;
+	padding-top: 40px;
+	color: #AAAAAA;
+}
+#f2>div{
+	
+	width: 80%;
+}
+#sj{
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	border-radius: 3px;
+	width: 40px;
+	height: 30px;
+	background-color: #8FAC47;
+	text-align: center;
+	padding-top: 10px;
+}
