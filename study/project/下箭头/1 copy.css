@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body,.wrap{
+    width: 100%;
+
+}
+.center{
+    width: 1200px;
+    margin: 0 auto;
+}
+.wrap>div,.wrap>div>div{
+     width: 100%;
+
+}
+
+/* 清除浮动 */
+.clearFloat:after{
+    contain: '';
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+.clearFloat{
+    zoom:1;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* ************************************************ */
+.head{
+    background-color: #3b4348;
+}
+.head > .nav{
+       height: 25px;
+       font-size: 13px;
+       padding: 15px 0;
+       border-bottom: 1px solid #525d64;
+}
+.head > .nav .call{
+    float: left;
+}
+.head > .nav .call li{
+    float: left;
+    margin-right: 30px;
+}
+.head > .nav .call li a{
+    display: block;
+    
+}
+.head > .nav .call li a>div{
+    float: left;
+    padding: 6px 6px;
+    background-color: #39b0ff;
+    margin-right: 10px;
+}
+.head > .nav .call li a>div>i{
+    display: block;
+    width: 13px;
+    height: 13px;
+    background-repeat:no-repeat;
+    background-size:100%;
+    
+}
+.head > .nav .call li:nth-child(1) a>div>i{
+     background-image: url('img/head/icon/xinfeng-0.png');
+}
+.head > .nav .call li:nth-child(2) a>div>i{
+    background-image: url('img/head/icon/dianhua-0.png');
+}
+.head > .nav .call li a>h6{   
+   float: left;
+   color: white;
+   line-height: 25px;
+   margin-right: 5px;
+}
+.head > .nav .call li a>span{
+    float: left;
+    color: #bfbfbf;
+    line-height: 25px;
+}
+.head > .nav .call li a:hover >h6{
+    transition: 1s;
+   color: #73b320; 
+}
+.head > .nav .call li a:hover >span{
+    transition: 1s;
+   color: #ffffff; 
+}
+.head > .nav .call li a:hover>div{
+    background-color: #ffffff;
+    transition: 1s;
+}
+.head > .nav .call li:nth-child(1) a:hover>div>i{
+    background-image: url('img/head/icon/xinfeng-1.png');
+    transition: 1s;
+}
+.head > .nav .call li:nth-child(2) a:hover>div>i{
+    background-image: url('img/head/icon/dianhua-1.png');
+    transition: 1s;
+}
+/* 右 */
+.head > .nav .right{
+    float: right;
+}
+.head > .nav .right li{
+    float: right;
+    margin-right: 30px;
+}
+.head > .nav .right li a{
+    display: block;
+    color: #bfbfbf;
+}
+.head > .nav .right li>a>i{
+    float: right;
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-bottom: 1px solid #bfbfbf;
+    border-right: 1px solid #bfbfbf;
+	transform:rotate(45deg);
+	margin-top: 3px;
+	margin-left: 5px;
+}
+.head > .nav .right li a:hover{
+	   color: #ffffff;   
+	   transition: 1s;
+}
