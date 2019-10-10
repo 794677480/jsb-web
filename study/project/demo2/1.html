@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #d5d5d5;
+        }
+        .tab {
+            width: 600px;
+            height: 400px;
+            margin: 20px auto;
+            position: relative;
+            box-shadow: 5px 5px 8px #333;
+        }
+        .pic {
+            width: 600px;
+            height: 400px;
+        }
+        .pic > div {
+            display: none;
+        }
+        .num {
+            position: absolute;
+            width: 220px;
+            right: 0;
+            bottom: 10px;
+        }
+        .num a {
+            width: 30px;
+            height: 30px;
+            text-decoration: none;
+            text-align: center;
+            line-height: 30px;
+            font-size: 13px;
+            display: inline-block;
+            border-radius: 50%;
+            background-color: #222;
+            color: white;
+            box-shadow: 0 0 4px #ddd;
+            margin-left: 8px;
+        }
+        .control {
+            color: white;
+            font-size: 50px;
+            width: 100%;
+            position: absolute;
+            z-index: 30px;
+            top:160px;
+            overflow: hidden;
+        }
+        .control span {
+            display: block;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 55px;
+            cursor: pointer;
+            background-color: rgba(255,255,255,0.6);
+        }
+        .control span:nth-child(1){
+            float: left;
+        }
+        .control span:nth-child(2){
+            float: right;
+        }
+        .num .active{
+            background-color: #bbb;
+            box-shadow: 0 0 3px #333;
+            transform: scale(1.1);
+            color:#222;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tab">
+        <div class="pic">
+            <div style="display: block;">
+                <img src="1.jpg" alt="">
+            </div>
+            <div>
+                <img src="2.jpg" alt="">
+            </div>
+            <div>
+                <img src="3.jpg" alt="">
+            </div>
+            <div>
+                <img src="4.jpg" alt="">
+            </div>
+            <div>
+                <img src="5.jpg" alt="">
+            </div>
+        </div>
+        <div class="num" id="num">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+        </div>
+        <div class="control">
+            <span>&lt;</span>
+            <span>&gt;</span>   
+        </div>
+    </div>
+    <script>
+        var num = document.getElementById('num');
+        var as=num.getElementsByTagName('a');
+        for(var i=0;i<as.length;i++){
+            as[i].onclick=function(){
+                for(var j=0; j<as.length;j++){
+                    as[j].className='';
+                }
+                 this.className='active';
+            }
+        }
+    </script>
+</body>
+
+</html>
