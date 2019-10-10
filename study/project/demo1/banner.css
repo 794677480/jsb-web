@@ -1,0 +1,124 @@
+.banner {
+    width: 100%;
+    height: 630px;
+    overflow: hidden;
+}
+.banner .bg-pic{
+    width: 100%;
+    height: 630px;
+    
+}
+.banner .bg-pic>ul{
+    width: 400%;
+    animation: 20s  move infinite;
+}
+.banner .bg-pic>ul>li{
+    width: 25%;
+    height: 630px;
+    float: left;
+    background-repeat:no-repeat;
+    background-size:cover;
+    
+}
+.banner .bg-pic>ul>li>div{
+	width: 1200px;
+	margin: 0 auto;
+	
+}
+.banner .bg-pic>ul>li>div>h2{
+	font-size: 52px;
+	color: #FFFFFF;
+	font-weight: 400;
+	margin-top: 150px;
+	padding-bottom: 19px;
+}
+.banner .bg-pic>ul>li>div>h3{
+	font-size: 30px;
+	color: #FFFFFF;
+	font-weight: 400;
+	padding-bottom: 19px;
+}
+.banner .bg-pic>ul>li>div>h4{
+	font-size: 15px;
+	color: #FFFFFF;
+	font-weight: 400;
+	padding-bottom: 80px;
+}
+.banner .bg-pic>ul>li>div>a{
+	
+	color: #FFFFFF;
+	background-color: #73B320;
+	padding: 15px 35px;
+	transition: 1s;
+}
+.banner .bg-pic>ul>li>div>a:hover{
+	background-color: #007BFF;
+}
+.banner .bg-pic>ul>li:nth-child(1){
+    background-image: url('img/banner/slider-img-1.jpg');
+}
+.banner .bg-pic>ul>li:nth-child(2){
+    background-image: url('img/banner/slider-img-2.jpg');
+}
+.banner .bg-pic>ul>li:nth-child(3){
+    background-image: url('img/banner/slider-img-3.jpg');
+}
+.banner .bg-pic>ul>li:nth-child(4){
+    background-image: url('img/banner/slider-img-1.jpg');
+}
+@keyframes move {
+   0%,25%{margin-left: 0%;}
+    25%,50%{margin-left: -100%;}
+    50%,75%{margin-left:-200%;}
+    75%,100%{margin-left: -300%;}
+}
+.banner .bg-pic{
+    position: relative;
+}
+.banner .bg-pic .direction{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top:44%;
+    z-index: 10;  
+	 display: none;
+}
+.banner:hover .bg-pic .direction{
+	display: block;
+}
+.banner .bg-pic .direction>div{
+    
+    width: 43px;
+    height: 43px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.banner .bg-pic .direction .left{
+    margin-left: 20px;
+    float: left;
+}
+.banner .bg-pic .direction .left i{
+    transform: rotate(135deg) ;
+}
+.banner .bg-pic .direction .right i{
+    transform: rotate(-45deg) ;
+}
+.banner .bg-pic .direction .right{
+    float: right;
+    margin-right: 20px;
+}
+
+.banner .bg-pic .direction i{
+    margin: 17px 16px;
+    display: inline-block;
+    width:8px;
+    height: 8px;
+    border-right:2px solid #bfbfbf;  
+    border-bottom:2px solid #bfbfbf; 
+    
+}
+.banner .bg-pic .direction>div:hover{
+    background-color: #73b320;
+    border-color:#73b320; 
+    
+}

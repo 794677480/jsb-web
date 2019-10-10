@@ -1,0 +1,275 @@
+.nav1{
+    height: 64px;
+    background-color: #333333;
+
+}
+
+.nav1 .center>div>button{
+    font-size: 18px;
+    color: #ffffff;
+   border: 0;
+    height: 64px;
+    width: 255px;
+    background-color: #73b320;
+    float: left;
+    margin-right: 30px;
+	position: relative;	
+}
+.nav1 .center>div>button>ul{
+	top: 64px;
+	position: absolute;
+	display: none;
+	z-index: 20;
+}
+.nav1 .center>div>button>ul>li{
+	width: 235px;
+	height: 48px;
+	background-color: #0056b3;
+	line-height: 50px;
+	padding: 10px;
+	position: relative;
+}
+.nav1 .center>div>button>ul>li>a .jt{
+	margin-top: 16px;
+	float: right;
+}
+.nav1 .center>div>button>ul>li:hover{
+	background-color: black;
+	transition:background-color 1s;
+}
+.nav1 .center>div>button>ul>li img{
+	margin: 0 auto;
+	float: left;
+}
+.nav1 .center>div>button>ul> #jia{
+	border-top: 1px solid #a6a6a6;
+}
+
+.nav1 .center>div>button>ul> #jia>a>img{
+	margin-top: 15px;
+	margin-left: 10px;
+	margin-right: 12px;
+}
+.nav1 .center>div>button>ul>li span{
+	float: left;
+	margin-left: 10px;
+	color: white;	
+}
+.nav1 .center>div>button:hover{
+    transition:background-color 1s;
+    background-color: #39b0ff;
+}
+.nav1 .center>div>button:hover ul{
+	display: block;
+}
+.nav1 .center .right>ul>li{
+    float: left;
+    padding: 21px; 
+    position: relative;
+}
+.nav1 .center .right>ul>li:hover{
+    transition:background-color 1s;
+    background-color: #555555;
+}
+.nav1 .center .right ul li a{
+    font-size: 14px;
+    color: #ffffff;
+}
+.nav1 .center .right ul li i{
+    display: inline-block;
+    width:5px;
+    height: 5px;
+    border-right:2px solid #ffffff;  
+    border-bottom:2px solid #ffffff; 
+    transform: rotate(45deg) translateY(-3px);
+}
+.nav1 .center .right>ul>li:hover .home{
+	display: block;
+	
+}
+.nav1 .center .right>ul>li:hover .shop{
+	display: block;
+}
+.nav1 .center .right>ul>li:hover .men{
+	display: block;
+}
+.nav1 .center .right>ul>li:hover .pages{
+	display: block;
+}
+.nav1 .center .right>ul>li:hover .blog{
+	display: block;
+}
+.nav1 .center .right>ul>li .home{
+	position: absolute;
+	top: 63px;
+	left: 0px;
+	width: 200px;
+	height: 180px;
+	background-color: gray;
+	text-align: left;
+	display: none;
+		z-index: 20;
+}
+.nav1 .center .right>ul>li .home>li{
+	padding: 10px;
+	height: 25px;
+	width: 180px;
+	line-height: 20px;
+}
+.nav1 .center .right>ul>li .home>li:hover{
+	transition:background-color 1s;
+	background-color: #555555;
+}
+.nav1 .center .right>ul>li .home>li>a{
+	color: #f4f5f7;
+	font-size: 13px;
+}
+/* ******************* */
+.nav1 .center .right>ul>li .shop{
+	position: absolute;
+	top: 63px;
+	left: -105px;
+	width: 600px;
+	height: 380px;
+	z-index: 20;
+	background-color: gray;
+	display: none;
+}
+.nav1 .center .right>ul>li .shop>ul{
+	float: left;
+	line-height: 40px;
+	margin: 0 15px;
+}
+.nav1 .center .right>ul>li .shop>ul>li a{
+	font-size: 13px;
+}
+.nav1 .center .right>ul>li .shop>ul>li:nth-child(1){
+	text-align: left;
+}
+.nav1 .center .right>ul>li .shop>ul>li:nth-child(1) a{
+	font-size: 14px;
+	color: #73b320 ;
+	
+}
+.nav1 .center .right>ul>li .shop>ul>li a:hover{
+	color: #73b320 ;
+	transition: 1s;
+}
+/* ******************* */
+.nav1 .center .right>ul>li .men{
+	position: absolute;
+	top: 63px;
+	left: -90px;
+	width: 480px;
+	height: 260px;
+	z-index: 20;
+	background-color: gray;
+	display: none;
+}
+.nav1 .center .right>ul>li .men>ul{
+	float: left;
+	line-height: 40px;
+	margin: 0 15px;
+}
+.nav1 .center .right>ul>li .men>ul>li a{
+	font-size: 13px;
+}
+.nav1 .center .right>ul>li .men>ul>li:nth-child(1){
+	text-align: left;
+}
+.nav1 .center .right>ul>li .men>ul>li:nth-child(1) a{
+	font-size: 14px;
+	color: #73b320 ;
+	
+}
+.nav1 .center .right>ul>li .men>ul>li a:hover{
+	color: #73b320 ;
+	transition: 1s;
+}
+/* ************************************* */
+.nav1 .center .right>ul>li .pages{
+	position: absolute;
+	top: 63px;
+	left: 0px;
+	width: 200px;
+	height: 315px;
+	background-color: gray;
+	text-align: left;
+	display: none;
+	z-index: 20;
+}
+.nav1 .center .right>ul>li .pages>li{
+	padding: 10px;
+	height: 25px;
+	width: 180px;
+	line-height: 20px;
+}
+.nav1 .center .right>ul>li .pages>li:hover{
+	transition:background-color 1s;
+	background-color: #555555;
+}
+.nav1 .center .right>ul>li .pages>li>a{
+	color: #f4f5f7;
+	font-size: 13px;
+}
+/* ********************* */
+.nav1 .center .right>ul>li .blog{
+	position: absolute;
+	top: 63px;
+	left: 0px;
+	width: 200px;
+	height: 225px;
+	background-color: gray;
+	text-align: left;
+	display: none;
+	z-index: 20;
+}
+.nav1 .center .right>ul>li .blog>li{
+	padding: 10px;
+	height: 25px;
+	width: 180px;
+	line-height: 20px;
+}
+.nav1 .center .right>ul>li .blog>li:hover{
+	transition:background-color 1s;
+	background-color: #555555;
+}
+.nav1 .center .right>ul>li .blog>li>a{
+	color: #f4f5f7;
+	font-size: 13px;
+}
+/* ********************* */
+.nav1 .center>div>button>ul>li:hover .qian{
+	display: block;
+}
+.nav1 .center>div>button>ul>li .qian{
+	position: absolute;
+	top: 0;
+	left: 255px;
+	width: 450px;
+	height: 220px;
+	padding: 20px;
+	display: none;
+	z-index: 20;
+	background-color: white;
+}
+.nav1 .center>div>button>ul>li .qian>ul{
+	float: left;
+	line-height: 40px;
+    margin: 0 22px;
+	
+}
+.nav1 .center>div>button>ul>li .qian>ul>li a{
+	font-size: 13px;
+}
+.nav1 .center>div>button>ul>li .qian>ul>li:nth-child(1){
+	text-align: left;
+}
+.nav1 .center>div>button>ul>li .qian>ul>li:nth-child(1) a{
+	font-size: 14px;
+	
+}
+.nav1 .center>div>button>ul>li .qian>ul>li a:hover{
+	color: #73b320 ;
+	transition: 1s;
+}

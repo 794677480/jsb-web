@@ -1,0 +1,40 @@
+/*重写css样式*/
+body{
+	font: 12px "Poppins", sans-serif;
+	color: #666;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+}
+p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	color: #777777;
+	text-decoration: none;
+}
+a:hover{
+	color: #169AF3;
+}
+/*img{
+	vertical-align: middle;
+}*/
+/*内容生成解决浮动对父元素造成的影响*/
+/*clear:after{
+	content: "";
+	display: block;
+	clear: both;
+}*/
+.lf{
+	float: left;
+}
+.rt{
+	float: right;
+}
+div.main{
+	width: 1140px;
+	margin: 0 auto;
+}
+
