@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<img src="img/head/icon/1.jpg"/ id="a">
+		<h4 id="h4"></h4>
+		<script type="text/javascript">
+			var img=document.getElementById('a');
+			var src=img.getAttribute('src');
+            var h4=document.getElementById('h4');
+			var s=src.substr(0,14);
+			h4.innerText=s;			
+		</script>
+	</body>
+</html>

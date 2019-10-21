@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input id="inp" placeholder="请输入验证码"/>
+		<button id="btn">显示</button>
+		<h5 id="h5"></h5>
+		<script type="text/javascript">
+			var inp=document.getElementById('inp');
+			var btn=document.getElementById('btn');
+			var h5=document.getElementById('h5');
+			btn.onclick=function(){
+				var a=inp.value;
+				var b=a.toLowerCase();
+				h5.innerText=b;
+			}
+		</script>
+	</body>
+</html>
