@@ -41,10 +41,15 @@
 		<script type="text/javascript">
 			var inp=document.getElementById('inp');
 			var btn=document.getElementById('btn');
-			var h5=document.getElementById('h5');
+			var h5=document.getElementById('h5');	          
 			btn.onclick=function(){
-				var a=inp.value;
-				var b=a.toLowerCase();
-				h5.innerText=b;
+			var a=inp.value;
+			var b=a.toLowerCase();
+                        if (b=='abcd') {
+                        h5.innerText='输入正确';
+                        }else{
+                      	 h5.innerText='请重新输入';
+                        }
+              
 			}
 		</script>
