@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var arr=[64,34,76,73,43,85,99,66];			
+			function shaixuan(a,b,c){
+				return a>=40;//全满足才为true
+			}
+			var narr=arr.every(shaixuan);
+			console.log(narr);
+			var a=['A','A','B','A','A','B','A'];
+			function ks(a,b,c){
+				return a!='C';//全满足才为true
+			}
+			var aa=a.every(ks);	
+			if (aa==true) {
+				alert('通过');
+			} else{
+				alert('考试');
+			}
+		</script>
+	</body>
+</html>

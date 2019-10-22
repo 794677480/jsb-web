@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<ul id="myul"></ul>
+		<script type="text/javascript">
+			var ul=document.getElementById('myul')
+			var arr=['a','e','c','d','e','f','g'];
+			//参数1:值,参数2:索引,参数3:数组本身
+			arr.forEach(function(value,index,array){
+				console.log(value);
+				console.log(index);
+				console.log(array);
+				var li=document.createElement('li');
+				li.innerHTML=index+1+':'+value;
+				ul.appendChild(li);
+			});
+		</script>
+	</body>
+</html>

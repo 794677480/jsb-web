@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="" name="type" id="inp" value="" />
+		<button id="btn">登录</button>
+		<script type="text/javascript">
+			var inp=document.getElementById('inp');
+			var btn=document.getElementById('btn');
+		
+			btn.onclick=function(){
+					var num=inp.value;
+				if(num.length>8){
+					alert('编号过长');
+				}else{
+					var bh=num.padStart(8,'0');
+					alert('编号为'+bh);
+					
+				}
+			}
+		</script>
+	</body>
+</html>

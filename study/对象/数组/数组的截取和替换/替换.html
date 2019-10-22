@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var arr=['魏寒霜','郑直','程洪波','高盛闯','刘杰','张爱佳','聂浩'];
+			//1 删除该参数1后的所有元素,包含当前索引内容
+			//splice(参数1)
+			//2 删除第一个参数代表的索引后的第二个参数的位数,参数1:起始索引,参数2:删除元素数量
+			//splice(参数1,参数2)
+			//3 参数1:起始索引 参数2:替换元素数量,参数3:需要替换的元素
+			//splice(参数1,参数2,参数3)
+			//4 增加  
+			//splice(增加的元素位置索引,0,增加的元素)
+			arr.splice(1,3,'李明');
+			console.log(arr);
+		</script>
+	</body>
+</html>

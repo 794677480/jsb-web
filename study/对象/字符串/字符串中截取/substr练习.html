@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				border: 1px solid black;
+				float: right;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="m-1.jpg"/ id="i1">
+		<img src="r-1.jpg"/ id="i2">
+		<div id="div">
+			<img src=""/>
+		</div>
+		<script type="text/javascript">
+			var img1=document.getElementById('i1');
+			var src1=img1.getAttribute('src');
+			var img2=document.getElementById('i2');
+			var src2=img2.getAttribute('src');
+			var div=document.getElementById('div');
+			var img2=div.getElementsByTagName('img');
+			var s=src1.substr(0,2);
+			var f=src1.substr(-4);
+			var s1=src2.substr(0,2);
+			var f1=src2.substr(-4);
+			i1.onclick=function(){				
+				 img2[0].setAttribute('src',s+'0'+f);
+			}
+			i2.onclick=function(){				
+				 img2[0].setAttribute('src',s1+'0'+f1);
+			}
+			
+			
+		</script>
+	</body>
+</html>

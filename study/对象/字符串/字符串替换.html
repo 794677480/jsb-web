@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			li{
+				list-style: none;
+			}
+		</style>
+	</head>
+	<body>
+	<div id="box" class="box">
+		<div class="say">
+            <input type="" name="enter" id="enter" value="" />
+            <button id="btn">发送</button>
+        </div>
+        <ul class="text" id="area"></ul>     
+    </div>
+		<script type="text/javascript">
+			var str='suicao';
+			var nstr=str.replace(/cao/,'***');
+			console.log(nstr);
+			
+			//练习:
+			/*
+			    1.制作一个聊天室,需要一个展示区和一个输入区
+			    2.用户输入内容,会一条条增加到展示区  
+			    3.输入的文字段从上往下顺序显示
+			    4.出现不文明用语,用***替换
+			*/
+        var btn=document.getElementById('btn');
+        var enter=document.getElementById('enter');
+        btn.onclick=function(){
+           var sr = enter.value;
+           var nr=sr.replace(/cao/,'***');
+           var li=document.createElement('li');
+           var area=document.getElementById('area');
+           area.appendChild(li);
+           var text=document.createTextNode(nr);
+           li.appendChild(text);
+            enter.innerText='';
+       }
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				background-image: url(bc.jpg);
+				background-size:cover;
+				
+			}
+			#box{
+				
+				overflow: hidden;
+				position: relative;
+				width: 312px;
+				height: 312px;
+				margin: 200px auto;
+				
+			}
+			#box>div{
+				width: 48px;
+				height: 48px;
+				/*border: 1px solid black;*/				
+				position: absolute;
+				font-size: 40px;
+				text-align: center;
+				line-height: 50px;	
+				background-image: url();	
+				background-size:cover;
+			    /* border-radius:25% ; */
+			    
+			   font-size: 0;
+			   
+			}
+
+		</style>
+	</head>
+	<body>
+		<div id='box'>
+			
+		</div>
+		<script type="text/javascript">
+			var arr=[
+			  [1,2,3,0,5,4],
+			  [3,1,2,0,4,5],
+			  [2,0,1,3,5,4],
+			  [3,0,2,1,4,5],
+			  [2,4,5,3,1,0],
+			  [2,0,4,1,5,3],
+			]
+			var lsarr=[];
+			var box=document.getElementById('box')
+			for(var i=0;i<6;i++){
+				for(var g=0;g<6;g++){
+				var divs=document.createElement('div');				
+				box.appendChild(divs);
+				divs.style.top=(i*50)+'px';
+				divs.style.left=(g*50)+'px';			
+				divs.innerHTML=arr[i][g];
+				divs.style.backgroundImage='url('+arr[i][g]+'.png)';
+				divs.onclick=function(){
+					if(lsarr.length<2){						
+						if(this.className=='active'){	
+							alert('已选过');
+						}else{
+							lsarr.push(Number(this.innerHTML));
+							this.className='active'
+						}
+						}
+						else{
+						lsarr=[];
+						var ss=box.querySelectorAll('#box>div');
+						for(var z=0;z<ss.length;z++){
+							ss[z].className='';							
+						}						
+						lsarr.push(Number(this.innerHTML));
+						this.className='active';
+					}
+					if(lsarr.length==2){
+                      if(lsarr[0]-lsarr[1]==0){
+                      	var ww=box.querySelectorAll('.active');
+                      	for(var e=0;e<ww.length;e++){
+                      		ww[e].style.backgroundImage='';
+                      		ww[e].innerHTML='';
+                      		ww[e].className='';
+                      		ww[e].onclick=null;
+                      	}                    	
+                      }
+					}
+ 				}				
+				}				
+			}
+			
+		</script>
+	</body>
+</html>
