@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="in1">
+	<button id="btn2">签到</button>
+	
+	<div id="div2">
+		
+	</div>
+	<div id="div">
+		
+	</div>
+    <script>
+       var a=['一','二','三','四','五','六','七','八','九','十'];
+       var b=[];
+       var in1=document.getElementById('in1');
+	   var btn2=document.getElementById('btn2');  
+	   var div=document.getElementById('div');
+	   var div2=document.getElementById('div2');
+	   var e=a.join('');
+	   div2.innerHTML='名单:'+a;
+	   btn2.onclick=function(){	
+		   var in2=in1.value;
+		   b.push(in2);
+		   console.log(b);
+		  var c=b.join(',');		  
+		  var f =new RegExp("[^" + c+']','g');
+		  var g=e.match(f);
+		 div.innerHTML='未到'+g;
+	   }   
+    </script>
+</body>
+</html>
