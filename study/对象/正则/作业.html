@@ -15,22 +15,24 @@
 		
 	</div>
     <script>
-       var a=['一','二','三','四','五','六','七','八','九','十'];
+       var a=['菅思博','路黎明','郑直','魏寒霜','张爱佳','高胜闯'];
        var b=[];
        var in1=document.getElementById('in1');
 	   var btn2=document.getElementById('btn2');  
 	   var div=document.getElementById('div');
 	   var div2=document.getElementById('div2');
-	   var e=a.join('');
-	   div2.innerHTML='名单:'+a;
+	   var e=a.join(' ');
+	   div2.innerHTML='名单:'+e;
 	   btn2.onclick=function(){	
 		   var in2=in1.value;
 		   b.push(in2);
-		   console.log(b);
-		  var c=b.join(',');		  
-		  var f =new RegExp("[^" + c+']','g');
-		  var g=e.match(f);
-		 div.innerHTML='未到'+g;
+		   console.log(b);		   
+		  var c=b.join('');	  
+		  var f =new RegExp('[^' +c+']+','g');
+		  var g=e.match(f);	
+		    console.log(g);
+			var s=g.join('');
+		 div.innerHTML='未到:'+s;
 	   }   
     </script>
 </body>
