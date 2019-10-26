@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+	padding: 0;	
+}
+a{
+	text-decoration: none;
+}
+html,body{
+         height:100%;
+        }
+.body{
+	height:100%;
+}
+
+.left{
+	background: url(log-in.png) no-repeat;
+	background-position:center center;
+	width:35%;
+	height:100%;
+	float: left;
+}
+.right{
+	width: 60%;
+	 height:100%;
+	float: right;
+	padding-top: 100px;
+	box-sizing: border-box;
+}
+.right .center{
+	width: 650px;
+	height: 500px;
+}
+.right .center >h2{
+	    color: #202e42;
+	    font-size: 30px;
+	    text-align: center;
+	    margin-bottom: 60px;
+		font-weight: 400;
+	}
+.right .center >div>span{
+	    color: #627183;
+	    font-size: 16px;
+	    font-weight: 500;
+	    margin-bottom: 15px;
+		display: block;
+}
+.right .center .fn{
+	display: flex;
+}
+.right .center .fn>div>span{
+	    color: #627183;
+	    font-size: 16px;
+	    font-weight: 500;
+	    margin-bottom: 15px;
+		display: block;
+}
+.right .center .fn >div >input{
+	width: 320PX;
+	height: 50PX;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #b0b9c7;
+	box-shadow: none;
+    padding: 10px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+.right .center  .fn >div >input:hover{
+	border: 1px solid #26D9B3;
+	box-shadow:     0px -2px 5px 5px rgba(0,0,0,.03),	
+	                -2px 0px 5px 5px rgba(0,0,0,.03), 	
+	                2px 0px 5px 5px rgba(0,0,0,.03),	
+	                0px 2px 5px 5px rgba(0,0,0,.03); 
+    transition: 1.5s;
+}
+.right .center>div>input:hover{
+	border: 1px solid #26D9B3;
+	box-shadow:     0px -2px 5px 5px rgba(0,0,0,.03),	
+	                -2px 0px 5px 5px rgba(0,0,0,.03), 	
+	                2px 0px 5px 5px rgba(0,0,0,.03),	
+	                0px 2px 5px 5px rgba(0,0,0,.03); 
+	transition: 1.5s;
+	}
+
+.right .center .fn .fr{
+	margin-left: 10px;
+}
+.right .center .sr>input{
+	width: 650PX;
+	height: 50PX;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #b0b9c7;
+	box-shadow: none;
+    padding: 10px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+
+.right .center .fx>input{
+	width: 15px;
+	height: 15px;
+	color: white;
+	box-shadow: none;
+	outline: none;
+	
+}
+.right .center .fx>label{
+	color: #90959E;
+}
+.right .center .fx>a{
+	color: #90959E;
+	float: right;
+}
+.right .center .jw>button{
+	width: 650px;
+	height: 60px;
+	background-color: #26d9b3;
+	outline: none;
+	border: 0;	   
+	color: #fff;
+    font-size: 16px;	   
+	border-radius: 3px;
+	box-shadow: 0 5px 30px rgba(60,191,163,.3);
+	margin-top:30px;
+}
+.right .center .jw>button:hover{
+	cursor: pointer;
+}
+.right .center .jw>p{
+	    color: #a1a5ad;
+	    font-size: 16px;	    
+	    max-width: 265px;
+	    margin: 34px auto;
+}
+.right .center .jw>p>a{
+	     color: #202e42;
+	    font-size: 16px;
+	    font-weight: 500;
+}
+ 
+   
