@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        
+        .left{
+            margin-left:100px;
+            height: 300px;
+            width: 600px;
+           float: left;
+        }
+       .top{
+         
+          width:600px; 
+          height: 300px;
+          text-align: center;
+          overflow: hidden;
+       }
+       .top>div>img{
+           width:600px;
+           height: 300px;
+       }
+       .bottom{
+           margin-top: 20px;
+           text-align: center;
+       }
+       .bottom>a{
+           display: inline-block;
+           margin-right: 70px;
+       }
+       .bottom>a>img{
+           width: 80px;
+           height: 40px;
+       }
+       .left .fx{
+           position: relative;
+       }
+       .left .fx>span{
+           position: absolute;
+           display: block;
+           width: 30px;
+           height: 50px;        
+           border: 1px solid black;
+           text-align: center;
+           line-height: 50px;
+       }
+       .left .fx #l{
+   
+           left:0px;
+           bottom:0px;
+
+       }
+       .left .fx #r{
+
+           right: 0px;
+           bottom:0px;
+
+       }
+       .left a{
+         text-decoration: none;
+         display: inline-block;
+         width: 10px;
+         height: 10px;
+       }
+       .right{
+          float: right;
+       }
+       .right>img{
+           width: 800px;
+           height: 400px;
+       }
+       .active{
+           color: red;
+       }
+    </style>
+</head>
+<body>
+  <div class="left">
+      <div class="top" id="top">
+        <div style="display: block;"><img src="1.jpg" alt="" ></div>
+        <div><img src="2.jpg" alt=""></div>
+        <div><img src="3.jpg" alt=""></div>
+        <div><img src="4.jpg" alt=""></div>
+        <div><img src="5.jpg" alt=""></div>
+        <div><img src="6.jpg" alt=""></div>
+    </div>
+    <div class="bottom" id="bottom">       
+        <a href="#" class="active"><img src="1.jpg" alt=""></a>
+        <a href="#"><img src="2.jpg" alt=""></a>
+        <a href="#"><img src="3.jpg" alt=""></a>
+        <a href="#"><img src="4.jpg" alt=""></a>
+        <a href="#"><img src="5.jpg" alt=""></a>
+        <a href="#"><img src="6.jpg" alt=""></a>       
+    </div>
+    <div class="fx">
+     <span id="l"><</span>
+     <span id="r">></span>     
+    </div>
+
+  </div>    
+    <div class="right" id="right">
+       <img src="" alt="" id="img">
+    </div>
+    <script>
+        var  to=document.getElementById('top');
+        var  bo=document.getElementById('bottom');
+        var ba=bo.getElementsByTagName('a');
+        var l=document.getElementById('l');
+        var r=document.getElementById('r');
+        var imgs=to.getElementsByTagName('div');
+        var img=document.getElementById('img');
+        var src=img.getAttribute('src');  
+        var a= 0;
+        var timer = null;
+         clearInterval(timer);
+         timer=setInterval(moveright,2000);   
+         function moveright(){
+        a++; 
+       if(a == ba.length){
+        a = 0;
+       }
+       for (var j = 0; j < ba.length; j++) {
+        ba[j].className = '';
+        imgs[j].style.display = 'none';
+       }
+        ba[a].className = 'active';
+        imgs[a].style.display = 'block';
+       }
+        r.onclick = moveright; 
+        l.onclick=function(){
+            a--;
+              if(a==-1){
+                a=ba.length-1;
+              }        
+              for(var j=0; j<ba.length;j++){
+                    ba[j].className='';
+                    imgs[j].style.display='none';
+                }
+        ba[a].className='active';
+        imgs[a].style.display='block';
+        }
+
+        to.onmouseover=function(){
+            clearInterval(timer);         
+            var f=Number(a)+1;
+            img.setAttribute('src',f+'.jpg');
+        }
+        to.onmouseout=function(){
+            timer=setInterval(moveright,2000);
+            img.setAttribute('src','');
+        }
+        for (var  i = 0; i < ba.length; i++) {
+            ba[i].setAttribute('x',i);                  
+            ba[i].onclick=function(){
+                for(var j=0; j<ba.length;j++){
+                    ba[j].className='';                 
+                    imgs[j].style.display='none';                  
+                }              
+                 this.className='active';
+                 imgs[this.getAttribute('x')].style.display='block';
+                 a = this.getAttribute('x');
+            } 
+        }
+       
+    </script>
+</body>
+</html>
