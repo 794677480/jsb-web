@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../jquery.min.js"></script>
+    <style>
+       *{
+           margin: 0;
+           padding: 0;
+       }
+       li{
+           width: 100px;
+           height: 100px;
+           list-style: none;
+           background-color: red;
+           margin: 10px;
+           float: left;
+       }
+        
+    </style>
+</head>
+<body>
+    <!-- <div id="mydiv">没啥</div>
+    <a href="">随便</a>
+    <p class="ss">也许</p> -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <h1>111</h1>
+    <span>222</span>
+    <p>333</p>
+    <strong>444</strong>
+    <div class="dd">555</div>
+    <script>
+    //    var mydiv=document.getElementById('mydiv');
+    //    var lis=document.getElementsByTagName('li');
+    //    for(var i=0;i<lis.length;i++){
+    //        lis[i].onclick=function(){
+    //            this.style.backgroundColor='blue';
+    //        }
+    //    }
+    //    console.log(mydiv);
+
+    //    console.log($("#mydiv"));
+    //    console.log($("a"));
+    //    console.log($(".ss"));
+    $("li").click(function(){ $(this).css({"background-color":"blue"});})
+    $("h1,span,p,strong,.dd").click(function(){ $(this).css({"color":"red"});})
+    </script>
+</body>
+</html>

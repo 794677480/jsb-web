@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../jquery.min.js"></script>
+</head>
+<body>
+    <div id="mydiv">div</div>
+    <p class="abc">ppp</p>
+    <p class="uuu">ppp</p>
+    <img src="1.jpg" alt="" class="">
+    <a href="http://www.baidu.com">baidu</a>
+    <script >
+        $("a").attr("href","http://www.bilibili.com")
+        var ist=true;
+        $("img").click(function(){
+            // if( $("img").attr("src")=='1.jpg'){
+            //   $("img").attr("src","2.jpg");
+            // }else{
+            //     $("img").attr("src","1.jpg");
+            // }
+            $(this).attr("src",function(){
+                if (ist) {
+                    ist=false;
+                    return '2.jpg';
+                } else {
+                    ist=true;
+                    return '1.jpg';
+                }
+            });
+        })
+    </script>
+</body>
+</html>

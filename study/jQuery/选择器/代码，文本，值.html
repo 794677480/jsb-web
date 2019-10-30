@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../jquery.min.js"></script>
+</head>
+<body>
+    <div id="div">
+        随便   
+    </div>
+    <input type="text">
+    <script>
+       console.log($("div").html());
+       console.log($("div").text());
+       console.log($("div").val());
+       $("div").html('一点');
+       $("div").text('两点');
+       $("input").val('三点');
+    </script>
+</body>
+</html>

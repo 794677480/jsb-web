@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../jquery.min.js"></script>
+    <style lang="">
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin: 20px
+        }
+        p{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p></p>
+
+    </div>
+    <script>
+        $("div").offset({left:10});
+        console.log( $("div").offset());
+    </script>
+</body>
+</html>

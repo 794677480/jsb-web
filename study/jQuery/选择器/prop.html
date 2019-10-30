@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../jquery.min.js"></script>
+    <style></style>
+</head>
+<body>
+    <input type="checkbox" name="" id="quan">all <br>
+    <input type="checkbox" name="" id="fan">fan <br>
+    <input type="checkbox" name="ball"  >足球
+    <input type="checkbox" name="ball"  >篮球
+    <input type="checkbox" name="ball"  >排球
+    <script>
+        // console.log($("#che").prop("checked"))
+        $("#quan").change(function(){
+            // alert($("#quan").prop("checked"));
+            if($("#quan").prop("checked")){
+              $("[name=ball]").prop("checked",true);
+            }else{
+                $("[name=ball]").prop("checked",false);
+            }        
+        })
+        $("[name=ball]").change(function(){});
+        $("#fan").change(function(){
+            // // alert($("#quan").prop("checked"));
+            // console.log($(".aa:not(:checked)"))
+            // $(".aa:not(:checked)").prop('checked',true);
+            // $("[name=ball]:checked").prop('checked',false);
+
+        })
+        //  $("[name=ball]").change(function(){
+        //     $(this).attr("name","");            
+        //     if($(this).prop("checked")){               
+        //       $("[name=ball]").prop("checked",false);
+
+        //     }else{
+        //         $("[name=ball]").prop("checked",true);
+        //     }  
+        //     $(this).attr("name","ball");      
+        // })
+    </script>
+</body>
+</html>
