@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../jquery.min.js"></script>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <script>
+        $("li").each(function(i,v){
+           console.log()
+        })
+        var arr= ['a','b','c']
+        // var obj={
+        //     q:'q1',
+        //     w:'w2'
+        // }
+        $(arr).each(function(i,v){
+           console.log(v)
+        })
+        $("li").click(function(){
+            $(this).css('color',"red");
+        })
+    </script>
+</body>
+</html>

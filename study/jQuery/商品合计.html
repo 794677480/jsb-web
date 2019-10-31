@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <table border="1px" >
+    	<tr>
+			<td>名称</td>
+			<td>数量</td>
+			<td>单价</td>
+			<td>总计</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="checkbox" name="" id="hw" value="" />
+				<span id="">
+					华为mate20
+				</span>
+			</td>
+			<td>
+				<input type="number" name="" id="num1" value="0" min="0">
+			</td>
+			<td>￥1999</td>
+			<td>￥<span id="he1">0</span></td>
+		</tr>
+		<tr>
+			<td>
+				<input type="checkbox" name="" id="xm" value="" />
+				<span id="">
+					小米8
+				</span>
+			</td>
+			<td>
+				<input type="number" name="" id="num2" value="0"  min="0"/>
+			</td>
+			<td>￥999</td>
+			<td>￥<span id="he2">0</span></td>
+		</tr>
+		<tr>
+			<td>
+				合计件数
+			</td>
+			<td>
+				<span id="num">
+					
+				</span>
+			</td>
+			<td>总价</td>
+			<td>￥<span id="he">0</span></td>
+		</tr>
+    </table>
+    <script >
+		var a=0
+		var b=0
+		var s=0
+		var x=0
+		var p=0			
+        $("#num1").change(function(){
+			  a= $("#num1").val();			 
+			 $("#he1").html(a*1999)		 		 
+		 })
+		 $("#num2").change(function(){
+		 	  b= $("#num2").val();
+		 	 $("#he2").html(b*999)		 
+		  })
+		  $("#hw").click(function(){
+			  if ($("#hw").prop("checked")) {			 
+				  s=a*1999
+				  $("#he").html(s+x)
+				  $("#num1").change(function(){
+				  	  a= $("#num1").val();			 
+				  	 $("#he1").html(a*1999)
+					s=a*1999
+					$("#he").html(s+x)
+				   })
+				  $("#he").html(s+x)
+				p+=1
+				 $("#num").html(p)
+			  } else{
+			  	s=0;
+				 $("#he").html(s+x)
+				 $("#num1").change(function(){
+				 	  s=0;
+				 	  $("#he").html(s+x)
+				  })
+				p-=1
+				 $("#num").html(p)
+			  }			  
+		  })
+		 $("#xm").click(function(){
+		 			  if ($("#xm").prop("checked")) {					  
+		 			  	 x=b*999
+		 			  	 $("#he").html(s+x)
+		 			  	 $("#num2").change(function(){
+		 			  	 	  b= $("#num2").val();			 
+		 			  	 	 $("#he2").html(b*999)
+		 			  	 	x=b*999
+		 			  	 	$("#he").html(s+x)
+		 			  	  })
+		 			  	 $("#he").html(s+x)	
+					  p+=1
+					   $("#num").html(p)
+		 			  } else{
+						   x=0;
+						   $("#he").html(s+x)
+						   $("#num2").change(function(){
+						   	  x=0;
+						   	  $("#he").html(s+x)
+						    })
+						  p-=1
+						   $("#num").html(p)
+		 			  	x=0;					 
+		 			  }
+				$("#he").html(s+x)	  
+		 })
+		 $("#num").html(p)	
+    </script>
+    
+</body>
+</html>
