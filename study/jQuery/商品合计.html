@@ -59,8 +59,9 @@
 		var a=0
 		var b=0
 		var s=0
-		var x=0
-		var p=0			
+		var x=0	
+	    var aa=0
+		var bb=0
         $("#num1").change(function(){
 			  a= $("#num1").val();			 
 			 $("#he1").html(a*1999)		 		 
@@ -72,54 +73,72 @@
 		  $("#hw").click(function(){
 			  if ($("#hw").prop("checked")) {			 
 				  s=a*1999
+				  aa=a
+				  $("#num").html(Number(aa)+Number(bb))
 				  $("#he").html(s+x)
 				  $("#num1").change(function(){
-				  	  a= $("#num1").val();			 
+				  	  a= $("#num1").val();	
+						
 				  	 $("#he1").html(a*1999)
 					s=a*1999
+					aa=a
 					$("#he").html(s+x)
+					$("#num").html(Number(aa)+Number(bb))
 				   })
 				  $("#he").html(s+x)
-				p+=1
-				 $("#num").html(p)
+				$("#num").html(Number(aa)+Number(bb))
 			  } else{
 			  	s=0;
+				aa=0
+				 $("#num").html(Number(aa)+Number(bb))
 				 $("#he").html(s+x)
 				 $("#num1").change(function(){
 				 	  s=0;
 				 	  $("#he").html(s+x)
+					
+					  aa=0
+					  $("#num").html(Number(aa)+Number(bb))
 				  })
-				p-=1
-				 $("#num").html(p)
+				 
 			  }			  
 		  })
 		 $("#xm").click(function(){
 		 			  if ($("#xm").prop("checked")) {					  
 		 			  	 x=b*999
+						 bb=b
+						 $("#num").html(Number(aa)+Number(bb))
 		 			  	 $("#he").html(s+x)
 		 			  	 $("#num2").change(function(){
-		 			  	 	  b= $("#num2").val();			 
+		 			  	 	  b= $("#num2").val();
+							
 		 			  	 	 $("#he2").html(b*999)
 		 			  	 	x=b*999
+							bb=b
 		 			  	 	$("#he").html(s+x)
+							 $("#num").html(Number(aa)+Number(bb))
 		 			  	  })
 		 			  	 $("#he").html(s+x)	
-					  p+=1
-					   $("#num").html(p)
+					
+					   $("#num").html(Number(aa)+Number(bb))
 		 			  } else{
 						   x=0;
+						   bb=0
+						   $("#num").html(Number(aa)+Number(bb))
 						   $("#he").html(s+x)
 						   $("#num2").change(function(){
 						   	  x=0;
 						   	  $("#he").html(s+x)
+							  
+							  bb=0;
+							  $("#num").html(Number(aa)+Number(bb))
 						    })
-						  p-=1
-						   $("#num").html(p)
-		 			  	x=0;					 
+							
+						  
+		 			  					 
 		 			  }
-				$("#he").html(s+x)	  
+					  
 		 })
-		 $("#num").html(p)	
+		 
     </script>
     
 </body>
